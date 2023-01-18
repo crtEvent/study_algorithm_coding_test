@@ -6,7 +6,7 @@
 ### :arrow_right: 요약: StringBuilder 의 reverse 기능 사용 -> 반전된 숫자가 클 때 에러
 
 ```java
-public class Q2_Reverse_Integer {
+public class Solution {
 
     public int reverse(int x) {
         StringBuilder sb = new StringBuilder(String.valueOf(x));
@@ -28,7 +28,7 @@ public class Q2_Reverse_Integer {
 ### :arrow_right: 요약: StringBuilder 의 reverse 기능 사용 + int 범위 설정 추가
 
 ```java
-public class Q2_Reverse_Integer {
+public class Solution {
 
     public int reverse(int x) {
         StringBuilder sb = new StringBuilder(String.valueOf(x));
