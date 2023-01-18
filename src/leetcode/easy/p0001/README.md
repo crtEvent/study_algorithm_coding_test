@@ -1,10 +1,10 @@
 # 0001. Two Sum
+- [0001. Two Sum](https://leetcode.com/problems/two-sum/)
 - 정수 배열과 target 이 주어졌을 때, 배열에서 두 숫자의 합이 target 이 되는 경우를 찾아라
 - 두 수의 index 를 출력하라
 
 ## :o: 첫 번째 시도(Accepted, Runtime 262 ms, Memory 42.8 MB)
-<details>
-<summary>요약: 이중 for 문 사용, O(n^2)</summary>
+- :arrow_right: 요약: 이중 for 문 사용, O(n^2)
 
 ```java
 public class Q1_Two_Sum {
@@ -32,11 +32,8 @@ public class Q1_Two_Sum {
 - 문제를 보자마자 바로 생각난 로직은 이중 for 문을 사용하여 배열의 값을 순서대로 비교하는 방식
 - Big-O가 O(n^2)이므로 개선 필요함
 
-</details>
-
 ## :x: 두 번째 시도(Wrong Answer)
-<details>
-<summary>요약: 이중 for 문을 하나의 for 문으로 변경하기 -> maxIndex 잘못 설정함</summary>
+- :arrow_right: 요약: 이중 for 문을 하나의 for 문으로 변경하기 -> maxIndex 잘못 설정함
 
 ```java
 public class Q1_Two_Sum {
@@ -70,11 +67,8 @@ Output: [0,0]
 ```
 - 원래 이중 for 문이 돌아가는 횟수가 nums.length * nums.length 이므로 maxIndex = nums.length * nums.length 이어야 한다
 
-</details>
-
 ## :o: 세 번째 시도(Accepted, Runtime 563 ms, Memory 42.3 MB)
-<details>
-<summary>요약: for 문 하나만 사용, O(n)</summary>
+- :arrow_right: 요약: for 문 하나만 사용, O(n)
 
 ```java
 public class Q1_Two_Sum {
@@ -100,21 +94,20 @@ public class Q1_Two_Sum {
     }
 }
 ```
-- Accepted, Runtime 262 ms, Memory 42.8 MB
-- Accepted, Runtime 563 ms, Memory 42.3 MB
+- 1차: Accepted, Runtime 262 ms, Memory 42.8 MB
+- 3차: Accepted, Runtime 563 ms, Memory 42.3 MB
 - Big-O는 O(n^2)에서 O(n)으로 줄어들었지만 더 느려졌다...
     - why?
     - :question: 입력값 개수가 적어서? -> Wrong Case 에서 둘 다 14번 째에서 결과 도출
         - Big-O 성능 비교 그래프를 보면 데이터가 작을 때는 O(n)가 더 느리게 나오긴 하는데 이유가 뭔지???
     - :question: row, column 연산 때문에?
     - :x: 만약 row, column 변수를 for 문 안에서 밖으로 때면 성능이 더 좋아질까? -> 테스트 해보니 똑같음
-</details>
 
 ## 상위권 해답
 <details>
 <summary>Runtime 상위권 해답</summary>
 
-### Runtime 0ms
+### Runtime 0 ms
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -131,7 +124,7 @@ class Solution {
 }
 ```
 
-### Runtime 2ms
+### Runtime 2 ms
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -157,7 +150,7 @@ class Solution {
 }
 ```
 
-### Runtime 4ms
+### Runtime 4 ms
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -187,7 +180,7 @@ class Solution {
 
 <summary>Memory 상위권 해답</summary>
 
-### Memory 37.8MB
+### Memory 37.8 MB
 ```java
 class Solution {
 
@@ -213,7 +206,7 @@ class Solution {
 }
 ```
 
-### Memory 40.6MB
+### Memory 40.6 MB
 ```java
 import java.util.HashMap;
 
@@ -231,7 +224,7 @@ class Solution {
 }
 ```
 
-### Memory 41MB
+### Memory 41 MB
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -248,7 +241,7 @@ class Solution {
 }
 ```
 
-### Memory 41.1MB
+### Memory 41.1 MB
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
