@@ -1,5 +1,5 @@
 # 0001. Two Sum
-- [0001. Two Sum](https://leetcode.com/problems/two-sum/)
+- <a href="https://leetcode.com/problems/two-sum/" target="_blank">0001. Two Sum</a>
 - 정수 배열과 target 이 주어졌을 때, 배열에서 두 숫자의 합이 target 이 되는 경우를 찾아라
 - 두 수의 index 를 출력하라
 
@@ -7,7 +7,7 @@
 ### :arrow_right: 요약: 이중 for 문 사용, O(n^2)
 
 ```java
-public class Q1_Two_Sum {
+public class Solution {
 
     public int[] twoSum(int[] nums, int target) {
         int[] solution = new int[2];
@@ -36,7 +36,7 @@ public class Q1_Two_Sum {
 ### :arrow_right: 요약: 이중 for 문을 하나의 for 문으로 변경하기 -> maxIndex 잘못 설정함
 
 ```java
-public class Q1_Two_Sum {
+public class Solution {
 
     public int[] twoSum(int[] nums, int target) {
         int[] solution = new int[2];
@@ -71,7 +71,7 @@ Output: [0,0]
 ### :arrow_right: 요약: for 문 하나만 사용, O(n)
 
 ```java
-public class Q1_Two_Sum {
+public class Solution {
 
     public int[] twoSum(int[] nums, int target) {
         int[] solution = new int[2];
