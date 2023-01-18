@@ -4,7 +4,7 @@
 - 두 수의 index 를 출력하라
 
 ## :o: 첫 번째 시도(Accepted, Runtime 262 ms, Memory 42.8 MB)
-- :arrow_right: 요약: 이중 for 문 사용, O(n^2)
+### :arrow_right: 요약: 이중 for 문 사용, O(n^2)
 
 ```java
 public class Q1_Two_Sum {
@@ -33,7 +33,7 @@ public class Q1_Two_Sum {
 - Big-O가 O(n^2)이므로 개선 필요함
 
 ## :x: 두 번째 시도(Wrong Answer)
-- :arrow_right: 요약: 이중 for 문을 하나의 for 문으로 변경하기 -> maxIndex 잘못 설정함
+### :arrow_right: 요약: 이중 for 문을 하나의 for 문으로 변경하기 -> maxIndex 잘못 설정함
 
 ```java
 public class Q1_Two_Sum {
@@ -68,7 +68,7 @@ Output: [0,0]
 - 원래 이중 for 문이 돌아가는 횟수가 nums.length * nums.length 이므로 maxIndex = nums.length * nums.length 이어야 한다
 
 ## :o: 세 번째 시도(Accepted, Runtime 563 ms, Memory 42.3 MB)
-- :arrow_right: 요약: for 문 하나만 사용, O(n)
+### :arrow_right: 요약: for 문 하나만 사용, O(n)
 
 ```java
 public class Q1_Two_Sum {
